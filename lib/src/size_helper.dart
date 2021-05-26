@@ -1,10 +1,10 @@
 import 'package:flutter/widgets.dart';
 
 class SizeUtility {
-  static num _height;
-  static num _width;
+  static late num _height;
+  static late num _width;
 
-  void init(MediaQueryData mediaQuery) {
+  static void init(MediaQueryData mediaQuery) {
     _height = mediaQuery.size.height -
         mediaQuery.viewPadding.top -
         mediaQuery.viewPadding.bottom;
